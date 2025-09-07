@@ -1,0 +1,98 @@
+{
+  "delhi": {
+    "ts": 1757179861.796354,
+    "units": "imperial",
+    "data": {
+      "coord": {
+        "lon": 77.2167,
+        "lat": 28.6667
+      },
+      "weather": [
+        {
+          "id": 800,
+          "main": "Clear",
+          "description": "clear sky",
+          "icon": "01n"
+        }
+      ],
+      "base": "stations",
+      "main": {
+        "temp": 85.68,
+        "feels_like": 93.47,
+        "temp_min": 85.68,
+        "temp_max": 85.68,
+        "pressure": 1005,
+        "humidity": 68,
+        "sea_level": 1005,
+        "grnd_level": 980
+      },
+      "visibility": 10000,
+      "wind": {
+        "speed": 7.27,
+        "deg": 108,
+        "gust": 17.36
+      },
+      "clouds": {
+        "all": 8
+      },
+      "dt": 1757179622,
+      "sys": {
+        "country": "IN",
+        "sunrise": 1757118705,
+        "sunset": 1757164066
+      },
+      "timezone": 19800,
+      "id": 1273294,
+      "name": "Delhi",
+      "cod": 200
+    }
+  },
+  "chennai": {
+    "ts": 1757180134.918698,
+    "units": "metric",
+    "data": {
+      "coord": {
+        "lon": 80.2785,
+        "lat": 13.0878
+      },
+      "weather": [
+        {
+          "id": 803,
+          "main": "Clouds",
+          "description": "broken clouds",
+          "icon": "04n"
+        }
+      ],
+      "base": "stations",
+      "main": {
+        "temp": 29.24,
+        "feels_like": 34.3,
+        "temp_min": 29.24,
+        "temp_max": 29.24,
+        "pressure": 1008,
+        "humidity": 75,
+        "sea_level": 1008,
+        "grnd_level": 1007
+      },
+      "visibility": 10000,
+      "wind": {
+        "speed": 3.87,
+        "deg": 179,
+        "gust": 5.45
+      },
+      "clouds": {
+        "all": 66
+      },
+      "dt": 1757179927,
+      "sys": {
+        "country": "IN",
+        "sunrise": 1757118483,
+        "sunset": 1757162819
+      },
+      "timezone": 19800,
+      "id": 1264527,
+      "name": "Chennai",
+      "cod": 200
+    }
+  }
+}
