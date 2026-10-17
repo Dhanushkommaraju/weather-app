@@ -1,4 +1,3 @@
-# main.py
 import os
 import io
 import json
@@ -11,12 +10,12 @@ from PIL import Image, ImageTk
 from datetime import datetime, timezone, timedelta
 
 # -------------------- CONFIG --------------------
-API_KEY = os.getenv("OPENWEATHER_API_KEY", "2b3d4cc3e4624937dd2c5f7f50e84aec")  # <- put your key here if not using env var
+API_KEY = os.getenv("OPENWEATHER_API_KEY", "2b3d4cc3e4624937dd2c5f7f50e84aec")
 CACHE_FILE = "cache.json"
 HISTORY_FILE = "history.json"
-BACKGROUND_IMAGE_PATH = "assets/bg.jpg"  # optional
-DEFAULT_UNITS = "metric"  # "metric"=°C, "imperial"=°F
-CACHE_TTL_SECONDS = 120    # 2 minutes
+BACKGROUND_IMAGE_PATH = "assets/bg.jpg" 
+DEFAULT_UNITS = "metric"   
+CACHE_TTL_SECONDS = 120
 
 # -------------------- UTILITIES --------------------
 def load_json(path, default):
@@ -37,7 +36,6 @@ def kelvin_to_c(k):
     return k - 273.15
 
 def get_local_time_from_offset(offset_seconds, dt_utc=None):
-    # If dt_utc (timestamp) given, compute that instant in local city time; else use now
     if dt_utc is None:
         dt = datetime.now(timezone.utc)
     else:
@@ -45,7 +43,6 @@ def get_local_time_from_offset(offset_seconds, dt_utc=None):
     return dt + timedelta(seconds=offset_seconds)
 
 def icon_url(icon_code):
-    # 2x/4x variants available; 4x looks better
     return f"https://openweathermap.org/img/wn/{icon_code}@4x.png"
 
 def fetch_image_bytes(url):
@@ -103,8 +100,7 @@ class WeatherApp(tk.Tk):
 
         # Apply theme
         self.apply_theme()
-
-        # If you want to auto-load last searched city:
+        
         if self.history["recent"]:
             self.city_var.set(self.history["recent"][0])
 
