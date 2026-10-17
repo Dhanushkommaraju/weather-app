@@ -10,7 +10,7 @@ from PIL import Image, ImageTk
 from datetime import datetime, timezone, timedelta
 
 # -------------------- CONFIG --------------------
-API_KEY = os.getenv("OPENWEATHER_API_KEY", "2b3d4cc3e4624937dd2c5f7f50e84aec")
+API_KEY = os.getenv("OPENWEATHER_API_KEY", "****************************")
 CACHE_FILE = "cache.json"
 HISTORY_FILE = "history.json"
 BACKGROUND_IMAGE_PATH = "assets/bg.jpg" 
